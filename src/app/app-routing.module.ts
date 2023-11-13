@@ -5,10 +5,12 @@ import {BouncingLogoComponent} from "./bouncing-logo/bouncing-logo.component";
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'bouncing-logo'
+    pathMatch: 'full',
+    redirectTo: 'home'
   },
   {
-    path: 'bouncing-logo',
+    path: 'home',
+    pathMatch: 'full',
     component: BouncingLogoComponent
   },
 ];

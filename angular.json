@@ -20,7 +20,8 @@
           "skipTests": true
         },
         "@schematics/angular:service": {
-          "
+          "skipTests": true
+        }
       },
       "root": "",
       "sourceRoot": "src",
