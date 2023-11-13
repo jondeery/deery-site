@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {BouncingLogoComponent} from "./bouncing-logo/bouncing-logo.component";
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'app-bouncing-logo'
+    redirectTo: 'bouncing-logo'
+  },
+  {
+    path: 'bouncing-logo',
+    component: BouncingLogoComponent
   },
 ];
 
