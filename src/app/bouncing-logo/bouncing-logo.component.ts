@@ -12,4 +12,7 @@ export class BouncingLogoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  imageClicked() {
+    alert("hey");
+  }
 }

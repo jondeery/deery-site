@@ -7,10 +7,10 @@
 
 
 @keyframes moveX {
-  from { left: 0; } to { left: 100vw; }
+  from { left: 0; } to { left: 89vw; }
 }
 @keyframes moveY {
-  from { top: 0; } to { top: 100vh; }
+  from { top: 0; } to { top: 95vh; }
 }
 
 
@@ -33,21 +33,21 @@
 }*/
 
 .image {
-  //animation-name: hor-movement, ver-movement;
-  //animation-duration: 8.141s, 5.414s;
-  //animation-iteration-count: infinite;
-  //animation-direction: alternate;
-  //animation-timing-function: linear;
+  cursor:pointer;
+  animation-name: moveY, moveX;
+  animation-duration: 8.141s, 5.414s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
   //display: block;
   //width: 20px;
   //height: 20px;
   //border-radius: 50%;
   //background-color: #999999;
   //box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
-  color: pink;
   position: relative;
-  -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-  -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-  -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-  animation: moveX 8s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  //-webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  //-moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  //-o-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  //animation: moveX 8s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
 }
