@@ -18,4 +18,8 @@ export class TopBarComponent implements OnInit {
     this.tabChange.emit(tab);
     this.currentSelectedTab = tab;
   }
+
+  navigateToBouncingLogo() {
+
+  }
 }

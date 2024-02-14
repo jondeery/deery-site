@@ -1,6 +1,6 @@
 <div class="grid-x top-bar-container grid-padding-x align-middle">
   <div class="cell shrink">
-    <img src="../../assets/deer.svg" alt="Deery Land" class="icon">
+    <img src="../../assets/deer.svg" alt="Deery Land" class="icon" (click)="navigateToBouncingLogo()">
   </div>
   <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'home'}">
     <a (click)="changeTab('home')">Home</a>
