@@ -1,0 +1,11 @@
+<div class="grid-x top-bar-container grid-padding-x align-middle">
+  <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'home'}">
+    <a (click)="changeTab('home')">Home</a>
+  </div>
+  <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'jsonFormatter'}">
+    <a (click)="changeTab('jsonFormatter')">Json Formatter</a>
+  </div>
+  <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'characterCounter'}">
+    <a (click)="changeTab('characterCounter')">Chatacter Counter</a>
+  </div>
+</div>

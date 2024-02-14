@@ -1,5 +1,4 @@
 @media (max-width: 767px) {
-  /* Add your mobile-specific styles here */
   app-top-bar {
     display: none;
   }
@@ -9,7 +8,6 @@
 }
 
 @media (min-width: 768px) {
-  /* Add your mobile-specific styles here */
   app-top-bar {
     display: block;
   }

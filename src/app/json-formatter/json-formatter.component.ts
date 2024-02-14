@@ -9,6 +9,7 @@ export class JsonFormatterComponent implements OnInit {
 
   inputtedJson = '';
   formattedJson = '';
+  copied = false;
 
   constructor() { }
 
@@ -27,7 +28,12 @@ export class JsonFormatterComponent implements OnInit {
 
   copyJson() {
     navigator.clipboard.writeText(this.formattedJson);
+    this.copied = true;
+    setTimeout(() => {
+      this.copied = false;
+    }, 3500);
   }
+
 
   syntaxHighlight(json: string) {
     json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

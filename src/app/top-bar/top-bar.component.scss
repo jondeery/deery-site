@@ -1,24 +1,19 @@
+@import '../styles/addOn';
+
 .top-bar-container {
-  border: 1px solid black;
+  border: rem-calc(1) solid black;
   background-color: #333;
-  padding: 10px;
+  padding: rem-calc(10);
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  width: rem-calc(60);
+  height: rem-calc(60);
   cursor: pointer;
 }
 
-a {
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
 
-.active{
-  background-color:#61977e;
-  color:white;
-  font-weight: bold;
-}
+
+
 
 

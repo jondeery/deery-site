@@ -2,12 +2,7 @@
   <div class="cell shrink">
     <img src="../../assets/deer.svg" alt="Deery Land" class="icon" (click)="navigateToBouncingLogo()">
   </div>
-  <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'home'}">
-    <a (click)="changeTab('home')">Home</a>
-  </div>
-  <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'jsonFormatter'}">
-    <a (click)="changeTab('jsonFormatter')">Json Formatter</a>
-  </div>
+  <app-menu-items (tabChange)="changeTab($event)"></app-menu-items>
 </div>
 
 

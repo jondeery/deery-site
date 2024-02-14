@@ -10,6 +10,8 @@ import { JsonFormatterComponent } from './json-formatter/json-formatter.componen
 import { HomeTabComponent } from './home-tab/home-tab.component';
 import {FormsModule} from "@angular/forms";
 import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
+import { MenuItemsComponent } from './menu-items/menu-items.component';
+import { CharacterCounterComponent } from './character-counter/character-counter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.componen
     HomePageComponent,
     JsonFormatterComponent,
     HomeTabComponent,
-    HamburgerMenuComponent
+    HamburgerMenuComponent,
+    MenuItemsComponent,
+    CharacterCounterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
+@import '../styles/addOn';
+
 textarea {
-  height: 152px;
+  height: rem-calc(152);
 }
 
 pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
@@ -12,12 +14,12 @@ pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
 
 .copy-button {
   position: absolute;
-  top: 27px;
-  right: 20px;
+  top: rem-calc(27);
+  right: rem-calc(20);
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding-right: 0px;
+  padding-right: rem-calc(0);
   color: black !important;
 }
 
