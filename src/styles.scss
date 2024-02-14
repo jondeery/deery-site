@@ -1,5 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~foundation-sites/scss/foundation';
+@include foundation-everything(true);
+
 body {
-  background-color: black;
-  overflow: hidden
+  padding-left: 40px;
+  padding-right: 40px;
+  //background: linear-gradient(to bottom, #007bff, #0000ff);
+  //background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+  height: 100vh;
+}
+
+.grid-y > .cell.auto {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }

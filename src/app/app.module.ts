@@ -4,15 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BouncingLogoComponent } from './bouncing-logo/bouncing-logo.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { JsonFormatterComponent } from './json-formatter/json-formatter.component';
+import { HomeTabComponent } from './home-tab/home-tab.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    BouncingLogoComponent
+    BouncingLogoComponent,
+    TopBarComponent,
+    HomePageComponent,
+    JsonFormatterComponent,
+    HomeTabComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

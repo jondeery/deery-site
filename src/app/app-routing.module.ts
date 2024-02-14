@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {BouncingLogoComponent} from "./bouncing-logo/bouncing-logo.component";
+import {HomePageComponent} from "./home-page/home-page.component";
 
 const routes: Routes = [
   {
@@ -11,8 +12,13 @@ const routes: Routes = [
   {
     path: 'home',
     pathMatch: 'full',
-    component: BouncingLogoComponent
+    component: HomePageComponent
   },
+  {
+    path: 'bouncing',
+    pathMatch: 'full',
+    component: BouncingLogoComponent
+  }
 ];
 
 @NgModule({

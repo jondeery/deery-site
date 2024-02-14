@@ -1,0 +1,16 @@
+<div class="grid-container">
+  <div class="grid-y grid-padding-y">
+    <div class="cell auto grid-y grid-padding-y">
+      <div class="cell auto">
+        <textarea [(ngModel)]="inputtedJson" placeholder="Enter JSON"></textarea>
+      </div>
+      <div class="cell auto text-center">
+        <a class="button" (click)="formatJson()">Format</a>
+      </div>
+    </div>
+    <pre class="cell auto">
+      {{formattedJson}}
+    </pre>
+  </div>
+</div>
+
