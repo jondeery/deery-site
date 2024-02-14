@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+  app-top-bar {
+    display: none;
+  }
+  app-hamburger-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Add your mobile-specific styles here */
+  app-top-bar {
+    display: block;
+  }
+  app-hamburger-menu {
+    display: none;
+  }
+}

@@ -18,12 +18,15 @@ export class JsonFormatterComponent implements OnInit {
   formatJson() {
     try {
       let pasrsedJson = JSON.parse(this.inputtedJson);
-      this.formattedJson = JSON.stringify(pasrsedJson, null, 4);
+      this.formattedJson = JSON.stringify(pasrsedJson, null, 4)
     } catch (error) {
       this.formattedJson = 'Invalid JSON please try again.';
       return;
     }
+  }
 
+  copyJson() {
+    navigator.clipboard.writeText(this.formattedJson);
   }
 
   syntaxHighlight(json: string) {

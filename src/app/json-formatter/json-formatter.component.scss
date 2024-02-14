@@ -8,3 +8,19 @@ pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
 .boolean { color: blue; }
 .null { color: magenta; }
 .key { color: red; }
+
+
+.copy-button {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 0px;
+  color: black !important;
+}
+
+.formattedJson {
+  position: relative;
+}

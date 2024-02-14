@@ -1,4 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-top-bar',
@@ -9,7 +10,7 @@ export class TopBarComponent implements OnInit {
   @Output() tabChange = new EventEmitter<string>();
   currentSelectedTab = 'home';
 
-  constructor() { }
+  constructor(private Router: Router) { }
 
   ngOnInit(): void {
   }
@@ -20,6 +21,7 @@ export class TopBarComponent implements OnInit {
   }
 
   navigateToBouncingLogo() {
+    this.Router.navigate(['/bouncing-logo'])
 
   }
 }

@@ -15,7 +15,7 @@ const routes: Routes = [
     component: HomePageComponent
   },
   {
-    path: 'bouncing',
+    path: 'bouncing-logo',
     pathMatch: 'full',
     component: BouncingLogoComponent
   }

@@ -8,9 +8,10 @@
         <a class="button" (click)="formatJson()">Format</a>
       </div>
     </div>
-    <pre class="cell auto">
-      {{formattedJson}}
-    </pre>
+    <div class="cell auto formattedJson" *ngIf="formattedJson">
+      <button title="Copied to clipboard!"  id="copyButton" class="copy-button" (click)="copyJson()"><i class="fa fa-copy"></i></button>
+      <pre>{{formattedJson}}</pre>
+    </div>
   </div>
 </div>
 

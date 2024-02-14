@@ -9,6 +9,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { JsonFormatterComponent } from './json-formatter/json-formatter.component';
 import { HomeTabComponent } from './home-tab/home-tab.component';
 import {FormsModule} from "@angular/forms";
+import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {FormsModule} from "@angular/forms";
     TopBarComponent,
     HomePageComponent,
     JsonFormatterComponent,
-    HomeTabComponent
+    HomeTabComponent,
+    HamburgerMenuComponent
   ],
   imports: [
     BrowserModule,
