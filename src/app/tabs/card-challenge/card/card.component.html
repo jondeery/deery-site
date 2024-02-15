@@ -1,0 +1,11 @@
+<div class="cell auto">
+  <div class="playing-card grid-y" [ngClass]="{'red': cardSuit == '♥' || cardSuit == '♦'}">
+    <div class="cell shrink text-left" *ngIf="!defaultCard">
+      <span class="suit">{{cardSuit}}</span>
+    </div>
+    <div class="cell auto text-center card-num" [ngClass]="{'default-card': defaultCard}">
+      <span *ngIf="!defaultCard">{{cardVal}}</span>
+      <img *ngIf="defaultCard" src="../../../../assets/simple_deer_black.svg" alt="Deery Land" class="icon">
+    </div>
+  </div>
+</div>

@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { BouncingLogoComponent } from './bouncing-logo/bouncing-logo.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { JsonFormatterComponent } from './json-formatter/json-formatter.component';
-import { HomeTabComponent } from './home-tab/home-tab.component';
-import {FormsModule} from "@angular/forms";
+import { JsonFormatterComponent } from './tabs/json-formatter/json-formatter.component';
+import { HomeTabComponent } from './tabs/home-tab/home-tab.component';
+import { FormsModule } from "@angular/forms";
 import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
-import { MenuItemsComponent } from './menu-items/menu-items.component';
-import { CharacterCounterComponent } from './character-counter/character-counter.component';
+import { MenuItemsComponent } from './tabs/menu-items/menu-items.component';
+import { CharacterCounterComponent } from './tabs/character-counter/character-counter.component';
+import { CardChallengeComponent } from './tabs/card-challenge/card-challenge.component';
+import { CardComponent } from './tabs/card-challenge/card/card.component';
+import {NgSelectModule} from "@ng-select/ng-select";
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { CharacterCounterComponent } from './character-counter/character-counter
     HomeTabComponent,
     HamburgerMenuComponent,
     MenuItemsComponent,
-    CharacterCounterComponent
+    CharacterCounterComponent,
+    CardChallengeComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

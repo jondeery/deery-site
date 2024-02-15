@@ -1,0 +1,109 @@
+<div class="grid-container">
+  <div class="grid-y grid-padding-y text-center">
+    <div class="cell auto grid-x grid-padding-x align-center card-div">
+      <div class="cell shrink">
+        <app-card [defaultCard]="true"></app-card>
+      </div>
+      <div class="cell shrink">
+        <app-card [cardVal]="cardVal" [cardSuit]="cardSuit"></app-card>
+      </div>
+    </div>
+    <div class="cell auto" *ngIf="!gameStarted">
+      <a class="button" (click)="randomCard()">Start</a>
+    </div>
+    <div class="cell auto grid-x grid-padding-x align-center" *ngIf="gameStarted && !lostGame && !wonHighLow">
+      <div class="cell shrink">
+        <a class="button" (click)="highLow('high')">Higher</a>
+      </div>
+      <div class="cell shrink">
+        <a class="button" (click)="highLow('low')">Lower</a>
+      </div>
+    </div>
+    <div class="cell auto grid-x grid-padding-x align-center" *ngIf="gameStarted && !lostGame && wonHighLow && !wonGuessColor">
+      <div class="cell shrink">
+        <a class="button" (click)="guessColor('red')">Red</a>
+      </div>
+      <div class="cell shrink">
+        <a class="button" (click)="guessColor('black')">Black</a>
+      </div>
+    </div>
+    <div class="cell auto grid-x grid-padding-x align-center" *ngIf="gameStarted && !lostGame && wonHighLow && wonGuessColor && !wonGuessSuit">
+      <div class="cell shrink">
+        <a class="button" (click)="guessSuit('♠')">♠</a>
+      </div>
+      <div class="cell shrink">
+        <a class="button" (click)="guessSuit('♣')">♣</a>
+      </div>
+      <div class="cell shrink">
+        <a class="button" (click)="guessSuit('♥')">♥</a>
+      </div>
+      <div class="cell shrink">
+        <a class="button" (click)="guessSuit('♦')">♦</a>
+      </div>
+    </div>
+    <div class="cell auto" *ngIf="gameStarted && !lostGame && wonHighLow && wonGuessColor && wonGuessSuit && !wonGuessValue">
+      <select class="value-picker" (change)="guessValue($event.target)">
+        <option *ngFor="let card of deckOfCardsUniqueNoSuit" [value]="card">{{ card }}</option>
+      </select>
+<!--      <ng-select class="value-picker" [items]="deckOfCardsUniqueNoSuit" (change)="guessValue($event.target)">-->
+<!--      </ng-select>-->
+    </div>
+    <div class="cell auto" *ngIf="gameStarted && !lostGame && wonHighLow && wonGuessColor && wonGuessSuit && wonGuessValue">
+      <h2>You Win!</h2>
+      <a class="button" (click)="resetGame()">Play Again?</a>
+    </div>
+    <div class="cell auto" *ngIf="lostGame">
+      <a class="button" (click)="resetGame()">You Lose! try again!</a>
+    </div>
+    <div class="cell auto grid-y grid-padding-y leaderboard text-center">
+<!--      <div class="cell auto">-->
+<!--        <table>-->
+<!--          <tr>-->
+<!--            <td>-->
+<!--              <h2>Leaderboard</h2>-->
+<!--            </td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>{{'Number of times won High Low: ' + highLowWins}}</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>{{'Number of times won Guess Color: ' + guessColorWins}}</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>{{'Number of times won Guess Suit: ' + guessSuitWins}}</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>{{'Number of times won Guess Value: ' + guessValueWins}}</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>{{'Number of times lost: ' + timesLost}}</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>{{'Number of times won: ' + timesWon}}</td>-->
+<!--          </tr>-->
+<!--        </table>-->
+<!--      </div>-->
+      <div class="cell auto text-center">
+        <h2>LeaderBoard</h2>
+      </div>
+      <div class="cell auto">
+        {{'Number of times won High Low: ' + highLowWins}}
+      </div>
+      <div class="cell auto">
+        {{'Number of times won Guess Color: ' + guessColorWins}}
+      </div>
+      <div class="cell auto">
+        {{'Number of times won Guess Suit: ' + guessSuitWins}}
+      </div>
+      <div class="cell auto">
+        {{'Number of times won Guess Value: ' + guessValueWins}}
+      </div>
+      <div class="cell auto">
+        {{'Number of times lost: ' + timesLost}}
+      </div>
+      <div class="cell auto">
+        {{'Number of times won: ' + timesWon}}
+      </div>
+    </div>
+  </div>
+</div>

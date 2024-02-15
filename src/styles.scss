@@ -1,3 +1,4 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
 @import '~foundation-sites/scss/foundation';
 @include foundation-everything(true);
 
@@ -16,3 +17,5 @@ body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+
+

@@ -13,6 +13,9 @@ MIT
 @angular/router
 MIT
 
+@ng-select/ng-select
+MIT
+
 rxjs
 Apache-2.0
                                Apache License

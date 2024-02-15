@@ -6,6 +6,9 @@
     <a (click)="changeTab('jsonFormatter')">Json Formatter</a>
   </div>
   <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'characterCounter'}">
-    <a (click)="changeTab('characterCounter')">Chatacter Counter</a>
+    <a (click)="changeTab('characterCounter')">Character Counter</a>
+  </div>
+  <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'cardChallenge'}">
+    <a (click)="changeTab('cardChallenge')">Card Challenge</a>
   </div>
 </div>

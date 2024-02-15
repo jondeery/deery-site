@@ -1,0 +1,27 @@
+@import '../../../styles/addOn';
+
+.playing-card {
+  border: 1px solid black;
+  height: rem-calc(140);
+  width: rem-calc(100);
+  background-color: white;
+  padding: rem-calc(5);
+}
+
+.suit {
+  font-size: rem-calc(25);
+  position: relative;
+  top: -8px;
+}
+
+.card-num {
+  font-size: rem-calc(40);
+}
+
+.default-card {
+  display: flex;
+}
+
+.red {
+  color: red;
+}
