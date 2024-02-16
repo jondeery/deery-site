@@ -56,54 +56,81 @@
       <a class="button" (click)="resetGame()">You Lose! try again!</a>
     </div>
     <div class="cell auto grid-y grid-padding-y leaderboard text-center">
-<!--      <div class="cell auto">-->
-<!--        <table>-->
-<!--          <tr>-->
-<!--            <td>-->
-<!--              <h2>Leaderboard</h2>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td>{{'Number of times won High Low: ' + highLowWins}}</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td>{{'Number of times won Guess Color: ' + guessColorWins}}</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td>{{'Number of times won Guess Suit: ' + guessSuitWins}}</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td>{{'Number of times won Guess Value: ' + guessValueWins}}</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td>{{'Number of times lost: ' + timesLost}}</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td>{{'Number of times won: ' + timesWon}}</td>-->
-<!--          </tr>-->
-<!--        </table>-->
-<!--      </div>-->
       <div class="cell auto text-center">
-        <h2>LeaderBoard</h2>
+        <h2>Stats</h2>
       </div>
-      <div class="cell auto">
-        {{'Number of times won High Low: ' + highLowWins}}
+      <div class="cell auto grid-x align-center text-center">
+        <div class="cell shrink">
+          <table class="desktop-table">
+            <tr>
+              <td>High Low</td>
+              <td>Guess Color</td>
+              <td>Guess Suit</td>
+              <td>Guess Value</td>
+              <td>Times Lost</td>
+              <td>Times Won</td>
+            </tr>
+            <tr>
+              <td>{{highLowWins}}</td>
+              <td>{{guessColorWins}}</td>
+              <td>{{guessSuitWins}}</td>
+              <td>{{guessValueWins}}</td>
+              <td>{{timesLost}}</td>
+              <td>{{timesWon}}</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <div class="cell auto">
-        {{'Number of times won Guess Color: ' + guessColorWins}}
-      </div>
-      <div class="cell auto">
-        {{'Number of times won Guess Suit: ' + guessSuitWins}}
-      </div>
-      <div class="cell auto">
-        {{'Number of times won Guess Value: ' + guessValueWins}}
-      </div>
-      <div class="cell auto">
-        {{'Number of times lost: ' + timesLost}}
-      </div>
-      <div class="cell auto">
-        {{'Number of times won: ' + timesWon}}
-      </div>
+<!--      <div class="cell grid-x align-center">-->
+<!--        <div class="cell shrink grid-y stat-div">-->
+<!--          <div class="cell auto">-->
+<!--            <span>High Low</span>-->
+<!--          </div>-->
+<!--          <div class="cell auto">-->
+<!--            {{highLowWins}}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="cell shrink grid-y stat-div">-->
+<!--          <div class="cell auto">-->
+<!--            <span>Color</span>-->
+<!--          </div>-->
+<!--          <div class="cell auto">-->
+<!--            {{guessColorWins}}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="cell shrink grid-y stat-div">-->
+<!--          <div class="cell auto">-->
+<!--            <span>Suit</span>-->
+<!--          </div>-->
+<!--          <div class="cell auto">-->
+<!--            {{guessSuitWins}}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="cell shrink grid-y stat-div">-->
+<!--          <div class="cell auto">-->
+<!--            <span>Value</span>-->
+<!--          </div>-->
+<!--          <div class="cell auto">-->
+<!--            {{guessValueWins}}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="cell shrink grid-y stat-div">-->
+<!--          <div class="cell auto">-->
+<!--            <span>Times Lost</span>-->
+<!--          </div>-->
+<!--          <div class="cell auto">-->
+<!--            {{timesLost}}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="cell shrink grid-y stat-div">-->
+<!--          <div class="cell auto">-->
+<!--            <span>Times Won</span>-->
+<!--          </div>-->
+<!--          <div class="cell auto">-->
+<!--            {{timesWon}}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </div>
 </div>

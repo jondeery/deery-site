@@ -5,10 +5,42 @@
   width: rem-calc(60);
 }
 
-th, td {
-  padding: rem-calc(8);
-}
+//th, td {
+//  padding: rem-calc(8);
+//}
 
 .card-div {
   margin-top: rem-calc(70);
+}
+
+.stat-div {
+   margin-right: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: rem-calc(8);
+}
+
+td {
+  width: rem-calc(115);
+}
+
+@media (max-width: 767px) {
+  .desktop-table {
+    display: none;
+  }
+  .mobile-table {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-table {
+    display: block;
+  }
+  .mobile-table{
+    display: none;
+  }
 }
