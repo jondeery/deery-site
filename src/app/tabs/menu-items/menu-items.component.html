@@ -1,4 +1,4 @@
-<div class="grid-x top-bar-container grid-padding-x align-middle">
+<ng-template #menuItemTemplate>
   <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'home'}">
     <a (click)="changeTab('home')">Home</a>
   </div>
@@ -11,4 +11,11 @@
   <div class="cell shrink" [ngClass]="{'active': currentSelectedTab == 'cardChallenge'}">
     <a (click)="changeTab('cardChallenge')">Card Challenge</a>
   </div>
+</ng-template>
+
+<div class="grid-x top-bar-container grid-padding-x align-middle desktop-bar">
+  <ng-container [ngTemplateOutlet]="menuItemTemplate"></ng-container>
+</div>
+<div class="grid-y top-bar-container grid-padding-y align-middle mobile-bar">
+  <ng-container [ngTemplateOutlet]="menuItemTemplate"></ng-container>
 </div>

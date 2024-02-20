@@ -10,3 +10,21 @@ a {
   color: white;
   font-family: "Roboto", sans-serif;
 }
+
+@media (max-width: 767px) {
+  .desktop-bar {
+    display: none;
+  }
+  .mobile-bar {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-bar {
+    display: flex;
+  }
+  .mobile-bar{
+    display: none;
+  }
+}
