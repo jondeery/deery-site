@@ -1,21 +1,24 @@
 <div class="grid-container full">
-    <div class="grid-y grid-padding-y">
-      <div class="cell">
-        <app-top-bar (tabChange)="tabChange($event)"></app-top-bar>
-        <app-hamburger-menu (tabChange)="tabChange($event)"></app-hamburger-menu>
-      </div>
-      <div class="cell auto" *ngIf="selectedTab == 'home'">
-        <app-home-tab></app-home-tab>
-      </div>
-      <div class="cell auto" *ngIf="selectedTab == 'jsonFormatter'">
-        <app-json-formatter></app-json-formatter>
-      </div>
-      <div class="cell auto" *ngIf="selectedTab == 'characterCounter'">
-        <app-character-counter></app-character-counter>
-      </div>
-      <div class="cell auto" *ngIf="selectedTab == 'cardChallenge'">
-        <app-card-challenge></app-card-challenge>
-      </div>
+  <div class="grid-y grid-padding-y">
+    <div class="cell">
+      <app-top-bar (tabChange)="tabChange($event)"></app-top-bar>
+      <app-hamburger-menu (tabChange)="tabChange($event)"></app-hamburger-menu>
     </div>
+    <div class="cell auto" *ngIf="selectedTab == 'home'">
+      <app-home-tab></app-home-tab>
+    </div>
+    <div class="cell auto" *ngIf="selectedTab == 'jsonFormatter'">
+      <app-json-formatter></app-json-formatter>
+    </div>
+    <div class="cell auto" *ngIf="selectedTab == 'characterCounter'">
+      <app-character-counter></app-character-counter>
+    </div>
+    <div class="cell auto" *ngIf="selectedTab == 'cardChallenge'">
+      <app-card-challenge></app-card-challenge>
+    </div>
+    <div class="cell auto" *ngIf="selectedTab == 'infiniteRun'">
+      <app-infinite-run></app-infinite-run>
+    </div>
+  </div>
 </div>
 

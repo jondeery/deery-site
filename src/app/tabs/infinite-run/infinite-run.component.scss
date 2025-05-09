@@ -1,0 +1,38 @@
+@import '../../styles/addOn';
+
+canvas {
+  border: 1px solid #000;
+  background-color: lightgreen;
+}
+
+.startDiv {
+  align-content: center;
+}
+
+
+//.startDiv {
+//  display: flex;
+//  justify-content: center; /* Centers horizontally */
+//  align-items: center;    /* Centers vertically (if needed) */
+//  height: 100px; /* Adjust the height as needed */
+//}
+//
+//.game-container {
+//  display: flex;
+//  flex-direction: column; /* To stack canvas and score vertically */
+//  justify-content: center; /* Centers horizontally */
+//  align-items: center;    /* Centers vertically */
+//}
+
+.gameNotStarted {
+  display: none;
+}
+
+.score {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+//.grid-container {
+//  margin-top: rem-calc(70);
+//}

@@ -15,6 +15,7 @@ import { CharacterCounterComponent } from './tabs/character-counter/character-co
 import { CardChallengeComponent } from './tabs/card-challenge/card-challenge.component';
 import { CardComponent } from './tabs/card-challenge/card/card.component';
 import {NgSelectModule} from "@ng-select/ng-select";
+import { InfiniteRunComponent } from "./tabs/infinite-run/infinite-run.component";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {NgSelectModule} from "@ng-select/ng-select";
     CharacterCounterComponent,
     CardChallengeComponent,
     CardComponent,
+    InfiniteRunComponent,
   ],
   imports: [
     BrowserModule,

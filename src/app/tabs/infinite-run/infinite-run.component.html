@@ -1,0 +1,27 @@
+<div class="grid-container text-center">
+  <div class="grid-y grid-padding-y">
+    <div class="cell auto text">
+      <div class="startDiv" *ngIf="!gameStarted">
+        <button class="button" (click)="startGame()">Start Game</button>
+      </div>
+      <div id="game" [class]="gameStarted ? 'game-container' : 'game-container gameNotStarted'">
+        <canvas #gameCanvas width="950" height="540"></canvas>
+        <div class="score">Score: {{ score }}</div>
+      </div>
+    </div>
+    <div class="cell auto grid-y grid-padding-y leaderboard text-center">
+      <div class="cell auto grid-x align-center text-center">
+        <div class="cell shrink">
+          <table class="desktop-table">
+            <tr>
+              <td>High Score</td>
+            </tr>
+            <tr>
+              <td>{{currentHighScore}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
