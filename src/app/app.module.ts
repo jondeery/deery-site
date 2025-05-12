@@ -16,6 +16,7 @@ import { CardChallengeComponent } from './tabs/card-challenge/card-challenge.com
 import { CardComponent } from './tabs/card-challenge/card/card.component';
 import {NgSelectModule} from "@ng-select/ng-select";
 import { InfiniteRunComponent } from "./tabs/infinite-run/infinite-run.component";
+import { NgxJsonViewerModule } from "ngx-json-viewer";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { InfiniteRunComponent } from "./tabs/infinite-run/infinite-run.component
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgSelectModule
+    NgSelectModule,
+    NgxJsonViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

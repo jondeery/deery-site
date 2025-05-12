@@ -8,13 +8,19 @@
         <a class="button" (click)="formatJson()">Format</a>
       </div>
     </div>
-    <div class="cell auto formattedJson" *ngIf="formattedJson">
-      <button title="Copied to clipboard!"  id="copyButton" class="copy-button" (click)="copyJson()">
-        <i class="fa fa-copy" *ngIf="!copied"></i>
-        <i class="fa fa-check" *ngIf="copied"></i>
-      </button>
-      <pre>{{formattedJson}}</pre>
+    <div class="grid-x">
+      <div class="cell auto formattedJson" *ngIf="formattedJson">
+        <button title="Copied to clipboard!"  id="copyButton" class="copy-button" (click)="copyJson()">
+          <i class="fa fa-copy" *ngIf="!copied"></i>
+          <i class="fa fa-check" *ngIf="copied"></i>
+        </button>
+        <pre class="white-box">{{formattedJson}}</pre>
+      </div>
+      <div class="cell auto formattedJson white-box" *ngIf="formattedJson">
+        <ngx-json-viewer [json]="pasrsedJson"></ngx-json-viewer>
+      </div>
     </div>
+
   </div>
 </div>
 

@@ -10,6 +10,7 @@ export class JsonFormatterComponent implements OnInit {
   inputtedJson = '';
   formattedJson = '';
   copied = false;
+  pasrsedJson: any;
 
   constructor() { }
 
@@ -18,8 +19,8 @@ export class JsonFormatterComponent implements OnInit {
 
   formatJson() {
     try {
-      let pasrsedJson = JSON.parse(this.inputtedJson);
-      this.formattedJson = JSON.stringify(pasrsedJson, null, 4)
+      this.pasrsedJson = JSON.parse(this.inputtedJson);
+      this.formattedJson = JSON.stringify(this.pasrsedJson, null, 4)
     } catch (error) {
       this.formattedJson = 'Invalid JSON please try again.';
       return;

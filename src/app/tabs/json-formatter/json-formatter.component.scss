@@ -8,7 +8,7 @@ textarea {
   color: rgb(255, 255, 231);
 }
 
-pre {
+.white-box {
   outline: 1px solid #ccc;
   padding: rem-calc(5);
   margin: rem-calc(5);
@@ -29,4 +29,8 @@ pre {
 
 .formattedJson {
   position: relative;
+}
+
+::ng-deep .segment-key, ::ng-deep .segment-separator, ::ng-deep .segment-value {
+  color: white !important;
 }
